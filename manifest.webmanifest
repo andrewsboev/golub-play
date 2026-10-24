@@ -1,0 +1,16 @@
+{
+  "name": "ГОЛУБЬ",
+  "short_name": "ГОЛУБЬ",
+  "description": "Платформер про городского голубя: воруй еду, бомби прохожих и проучи бабку с газетой.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#14110f",
+  "theme_color": "#14110f",
+  "icons": [
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

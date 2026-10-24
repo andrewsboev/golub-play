@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>ГОЛУБЬ</title>
+    <meta
+      name="description"
+      content="Платформер про городского голубя: воруй еду, бомби прохожих и проучи бабку с газетой."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ГОЛУБЬ" />
+    <meta property="og:title" content="ГОЛУБЬ" />
+    <meta
+      property="og:description"
+      content="Ты родился ни с чем. Ни денег. Ни дома. Ни достоинства. Только крылья. Задача: проучить бабку с газетой."
+    />
+    <meta property="og:url" content="https://andrewsboev.github.io/golub-play/" />
+    <meta property="og:image" content="https://andrewsboev.github.io/golub-play/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#14110f" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ГОЛУБЬ" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Rubik:wght@500;700;800&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #14110f;
+        overflow: hidden;
+      }
+      #game {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* Телефон: никаких выделений, лупы, прокрутки и зума от касаний */
+      html,
+      body,
+      #game {
+        touch-action: none;
+        overscroll-behavior: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Сцена с игрой; на телефоне, который держат боком при вертикальной странице, поворачивается (src/ui/rotate.ts) */
+      #stage {
+        position: fixed;
+        inset: 0;
+      }
+      /* Свой курсор игры — перо (tools/build-cursor.mjs, точка касания — кончик), и над кнопками тоже: !important
+         сильнее курсора, который Phaser ставит canvas'у. Нет картинки — браузер берёт обычный. */
+      canvas {
+        cursor:
+          url('assets/ui/cursor.png') 1 0,
+          auto !important;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DkUBSORH.js"></script>
+  </head>
+  <body>
+    <div id="stage"><div id="game"></div></div>
+  </body>
+</html>

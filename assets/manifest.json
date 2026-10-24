@@ -1,0 +1,55 @@
+{
+ "atlases": [
+  "ambient",
+  "props",
+  "dog",
+  "kids",
+  "items",
+  "foreground",
+  "granny",
+  "tiles",
+  "people",
+  "pigeon",
+  "ui"
+ ],
+ "backdrops": [
+  "bg_park_wall",
+  "bg_bakery_fresh",
+  "bg_park_statue",
+  "bg_alley_door",
+  "bg_market_cafe",
+  "bg_park_tree",
+  "bg_bakery_citybread",
+  "bg_market_goods",
+  "bg_alley_service",
+  "bg_alley_dumpster",
+  "bg_courtyard",
+  "illus_title_dusk",
+  "illus_title_night",
+  "illus_victory",
+  "illus_pigine"
+ ],
+ "strips": {
+  "level1": {
+   "width": 17100,
+   "height": 1080,
+   "tileWidth": 2048,
+   "tiles": [
+    "strip_level1_00",
+    "strip_level1_01",
+    "strip_level1_02",
+    "strip_level1_03",
+    "strip_level1_04",
+    "strip_level1_05",
+    "strip_level1_06",
+    "strip_level1_07",
+    "strip_level1_08"
+   ]
+  }
+ },
+ "parallax": [
+  "sky",
+  "city",
+  "middle"
+ ]
+}
